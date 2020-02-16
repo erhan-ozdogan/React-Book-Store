@@ -6,28 +6,23 @@ import {
     Route,
     Link
   } from "react-router-dom";
+import List from './pages/list';
 
 class App extends React.Component{
+
+
     render(){
         return(
-            <Router>
             <div className="App">
-                <nav>
-                    <ul>
-                        <Link to="/header"><li>Header</li></Link>  
-                        <Link to="/"><li>Home</li></Link>        
-                    </ul>
-                </nav>
-                
-                    <Switch>
-
-                    <Route path="/header" component={Header}/>
-                    </Switch>
+                <List/>
+           
                 
             </div>
-            </Router>
+            
         );
     }
 }
+
+
 
 export default App;
