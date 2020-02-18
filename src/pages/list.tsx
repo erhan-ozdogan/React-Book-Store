@@ -6,6 +6,7 @@ import {
     Link
   } from "react-router-dom";
 import Detail from './detail';
+import '../styles/table.css';
 interface IProps {
     
 }
@@ -33,12 +34,8 @@ class list extends React.Component<IProps,IState>{
                         <td>{adi}</td>
                         <td>{yazar}</td>
                         <td>{yayinEvi}</td>
-                        <Router>
-                            <Link to={`/detail/${id}`}><td>Detaylar</td></Link>
-                            <Switch>
-                                <Route path="/:id" />
-                            </Switch>
-                        </Router>
+                        <Link  to={`/detail/${id}`}><td>Detaylar</td></Link>
+                            
                     </tr>
                 )
             }),
@@ -53,18 +50,6 @@ class list extends React.Component<IProps,IState>{
             kitapAdiAra:event.target.value
         })
         console.log(this.state.kitapAdiAra);
-        /*this.state.books.forEach(book => {
-            let a:any=book
-            console.log(JSON.stringify(book));
-            console.log(a.id)
-        });*/
-       /* await this.tabloAyarla(await this.state.books.filter((book:any)=>{
-            const {id,adi,yazar,yayinEvi}=book;
-            console.log(adi.includes(this.state.kitapAdiAra))
-            adi.includes(this.state.kitapAdiAra);
-        }));*/
-        
-        
     }
 
     kitapGetir(){
@@ -95,12 +80,7 @@ class list extends React.Component<IProps,IState>{
                     <td>{adi}</td>
                     <td>{yazar}</td>
                     <td>{yayinEvi}</td>
-                    <Router>
-                        <Link to={`/Detail/${id}`}><td>Detaylar </td></Link>
-                        <Switch>
-                            <Route path="/Detail/:id" ><Detail/></Route>
-                        </Switch>
-                    </Router>
+                    <Link to={`/detail/${id}`}><td>Detaylar </td></Link>
                 </tr>
             )
         })})

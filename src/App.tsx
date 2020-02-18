@@ -1,7 +1,9 @@
 import * as React from 'react';
 import Header from './components/Header';
+import Detail from './pages/detail';
+
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Switch,
     Route,
     Link
@@ -13,11 +15,17 @@ class App extends React.Component{
 
     render(){
         return(
+            <Router>
             <div className="App">
-                <List/>
-           
                 
+                    <Route path="/" exact component={List}/>
+                    <Route path="/detail/:id" component={Detail}/>
+                
+                
+           
+
             </div>
+            </Router>
             
         );
     }
