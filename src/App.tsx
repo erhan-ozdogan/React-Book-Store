@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Header from './components/Header';
 import Detail from './pages/detail';
 import Create from './pages/create';
 
