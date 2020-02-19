@@ -43,7 +43,7 @@ class detail extends React.Component<IProps,IState>{
             <div>
                 <h1>{this.state.book.adi}</h1>
                 <hr/>
-                <img src="../../assets/book.jpg" alt="book"/>
+                <img src="./assets/book.jpg" alt="book"/>
                 <h4>ID: {this.state.book.id}</h4>
                 <h4>Yazar: {this.state.book.yazar}</h4>
                 <h4>Yayin Evi: {this.state.book.yayinEvi}</h4>

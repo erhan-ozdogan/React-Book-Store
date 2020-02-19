@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Header from './components/Header';
 import Detail from './pages/detail';
+import Create from './pages/create';
 
 import {
     HashRouter as Router,
@@ -20,7 +21,7 @@ class App extends React.Component{
                 
                     <Route path="/" exact component={List}/>
                     <Route path="/detail/:id" component={Detail}/>
-                
+                    <Route path="/create" component={Create}/>
                 
            
 

@@ -1,3 +1,54 @@
 .booksTable{
-    background-color: aqua;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 17px;
+    font-weight: 600;
 }
+.booksTable td, .booksTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  .booksTable thead{
+    background-color: #4CAF50;
+    color:white
+  }
+  .buttons{
+      width: 20%;
+      margin:20px auto ;
+  }
+
+  .pagingButtons{
+      width: 40%;
+      height: 40px;
+      margin: 10px 10px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      border-radius: 18px;
+      border-style: none;
+      font-size: medium;
+      background-color: #4CAF50;
+      color: white;
+      outline: none;
+      cursor: pointer;
+      
+  }
+  .routerLink{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+  }
+  .createButton{
+      display: block;
+      width: 50%;
+      height: 40px;
+      margin: 0px auto;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      border-radius: 18px;
+      border-style: none;
+      background-color: #4CAF50;
+      color: white;
+      outline: none;
+      
+  }
